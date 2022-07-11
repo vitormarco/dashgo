@@ -33,7 +33,7 @@ Após tudo configurado e instalado
 > Clone este repositório
 
 ```bash
- git clone --rep
+ git clone https://github.com/vitormarco/dashgo.git
 ```
 
 > Acesse a pasta pelo terminal/cmd
