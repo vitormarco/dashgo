@@ -4,8 +4,6 @@
 
 <p align="center">
  <a href="#">Sobre</a> •
- <a href="#">Funcionalidades</a> •
- <a href="#">Layout</a> •
  <a href="#">Como executar o projeto</a>  •
  <a href="#">Tecnologias</a>
 </p>
@@ -20,23 +18,6 @@
 
 <h4 align="center"> 🚧 Dashgo 🚀 Em construção 🚧 </h4>
 <!-- <h4 align="center"> 🚧 Dashgo ✅ Concluído 🚧 </h4> -->
-
-## ⚙️Funcionalidades
-
-- [ ] Definir
-- [ ] Definir
-- [ ] Definir
-
-## 🎨 Layout
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center; gap: 8px ">
-  <img src="#" width="200px" alt="In Progress" />
-  <img src="#" width="200px" alt="In Progress" />
-</p>
-
-<!-- <a href="https://www.figma.com/file/D0dCXNNcvdhMVgn8ZczRPQ/Desafios-M%C3%B3dulo-3-ReactJS?node-id=0%3A1">
-  <img alt="Made by tgmarinho" src="https://img.shields.io/badge/Acessar%20Layout-Figma-FF57B2">
-</a> -->
 
 ## 🚀 Como executar o projeto
 
