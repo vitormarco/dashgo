@@ -85,7 +85,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - ✔️ [Typescript](https://www.typescriptlang.org/)
 - ✔️ [Next](https://nextjs.org/docs/basic-features/typescript)
 - ✔️ [Chakra](https://chakra-ui.com/)
-- ✔️ [Date-fns](https://date-fns.org/)
 
 > Veja o arquivo [package.json](https://github.com/vitormarco/dashgo/blob/master/package.json)
 
