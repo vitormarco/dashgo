@@ -1,3 +1,4 @@
+<!-- logo -->
 <p align="center">
   <img src="#"   width="175px" alt="In Progress" />
 </p>
@@ -18,6 +19,18 @@
 
 <h4 align="center"> 🚧 Dashgo 🚀 Em construção 🚧 </h4>
 <!-- <h4 align="center"> 🚧 Dashgo ✅ Concluído 🚧 </h4> -->
+
+## 🎨 Layout
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center; gap: 8px ">
+  <img src="./github/login.png" width="50%" alt="Login" />
+  <!-- <img src="./github/post.svg" width="200px" alt="Post" /> -->
+</p>
+
+<!--
+<a href="https://www.figma.com/file/D0dCXNNcvdhMVgn8ZczRPQ/Desafios-M%C3%B3dulo-3-ReactJS?node-id=0%3A1">
+  <img alt="figma" src="https://img.shields.io/badge/Acessar%20Layout-Figma-FF57B2">
+</a> -->
 
 ## 🚀 Como executar o projeto
 
