@@ -4,9 +4,10 @@
 </p>
 
 <p align="center">
- <a href="#">Sobre</a> •
- <a href="#">Como executar o projeto</a>  •
- <a href="#">Tecnologias</a>
+ <a href="#dashgo">Sobre</a> •
+ <a href="#-layout">Layout</a>  •
+ <a href="#-como-executar-o-projeto">Como executar o projeto</a>  •
+ <a href="#-tecnologias">Tecnologias</a>
 </p>
 
 # Dashgo
@@ -15,7 +16,9 @@
   <img src="#"   width="400px" alt="In Progress" />
 </p>
 
-<!-- sobre descrição -->
+Projeto abordado no módulo 4 do Ignite. <br> Objetivo é apresentar alguns conceitos como **Interfaces Declarativas**, utilizando o **Chakra** como ferramenta.
+Utilização de controles de formulários, com o **React Hook Form** <br>
+
 
 <h4 align="center"> 🚧 Dashgo 🚀 Em construção 🚧 </h4>
 <!-- <h4 align="center"> 🚧 Dashgo ✅ Concluído 🚧 </h4> -->
