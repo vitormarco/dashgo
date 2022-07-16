@@ -1,5 +1,9 @@
 import { Flex, Input, Text, Icon, HStack, Box, Avatar } from '@chakra-ui/react';
-import { RiNotificationLine, RiSearchLine, RiUserAddLine } from 'react-icons/ri'
+import {
+  RiNotificationLine,
+  RiSearchLine,
+  RiUserAddLine,
+} from 'react-icons/ri';
 
 export const Header = () => {
   return (
@@ -7,14 +11,17 @@ export const Header = () => {
       as="header"
       w="100%"
       h="20"
-      maxWidth={1400}
+      maxWidth={1480}
+      mx="auto"
       mt={4}
       px={6}
       align="center"
     >
       <Text fontSize="3xl" fontWeight="bold" letterSpacing="tight" w="64">
         dashgo
-        <Text as="span" ml={1} color="pink.500">.</Text>
+        <Text as="span" ml={1} color="pink.500">
+          .
+        </Text>
       </Text>
 
       <Flex
@@ -35,16 +42,13 @@ export const Header = () => {
           variant="unstyled"
           px={4}
           mr={4}
-          placeholder='Buscar na plataforma'
+          placeholder="Buscar na plataforma"
         />
 
         <Icon as={RiSearchLine} fontSize={20} />
       </Flex>
 
-      <Flex
-        align="center"
-        ml="auto"
-      >
+      <Flex align="center" ml="auto">
         <HStack
           spacing={8}
           mx={8}
@@ -66,7 +70,11 @@ export const Header = () => {
             </Text>
           </Box>
 
-          <Avatar size="md" name='Vítor Marco' src='https://github.com/vitormarco.png' />
+          <Avatar
+            size="md"
+            name="Vítor Marco"
+            src="https://github.com/vitormarco.png"
+          />
         </Flex>
       </Flex>
     </Flex>
