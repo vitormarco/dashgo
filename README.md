@@ -19,7 +19,6 @@
 Projeto abordado no módulo 4 do Ignite. <br> Objetivo é apresentar alguns conceitos como **Interfaces Declarativas**, utilizando o **Chakra** como ferramenta.
 Utilização de controles de formulários, com o **React Hook Form** <br>
 
-
 <h4 align="center"> 🚧 Dashgo 🚀 Em construção 🚧 </h4>
 <!-- <h4 align="center"> 🚧 Dashgo ✅ Concluído 🚧 </h4> -->
 
@@ -27,7 +26,11 @@ Utilização de controles de formulários, com o **React Hook Form** <br>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center; gap: 8px ">
   <img src="./github/login.png" width="50%" alt="Login" />
-  <!-- <img src="./github/post.svg" width="200px" alt="Post" /> -->
+  <img src="./github/dashboard.png" width="50%" alt="Dashboard" />
+</p>
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center; gap: 8px ">
+  <img src="./github/users.png" width="100%" alt="Users" />
 </p>
 
 <!--
