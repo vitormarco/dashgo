@@ -12,11 +12,11 @@ export const Sidebar = () => {
   return (
     <Box as="aside" w={64} mr={8}>
       <Stack spacing={12} align="flex-start">
-        <NavSection title="Geral">
+        <NavSection title="GERAL">
           <NavLink icon={RiDashboardLine}>Dashboard</NavLink>
           <NavLink icon={RiContactsLine}>Usuários</NavLink>
         </NavSection>
-        <NavSection title="Automação">
+        <NavSection title="AUTOMAÇÃO">
           <NavLink icon={RiInputMethodLine}>Formulários</NavLink>
           <NavLink icon={RiGitMergeLine}>Automação</NavLink>
         </NavSection>
