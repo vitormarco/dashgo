@@ -26,14 +26,8 @@ Utilização de controles de formulários, com o **React Hook Form** <br>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center; gap: 8px ">
   <img src="./github/login.png" width="50%" alt="Login" />
-</p>
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center; gap: 8px ">
-  <img src="./github/dashboard.png" width="100%" alt="Dashboard" />
-</p>
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center; gap: 8px ">
-  <img src="./github/users.png" width="100%" alt="Users" />
+  <img src="./github/dashboard.png" width="50%" alt="Dashboard" />
+  <img src="./github/users.png" width="50%" alt="Users" />
 </p>
 
 <!--
