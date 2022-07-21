@@ -1,7 +1,7 @@
-<!-- logo -->
+<!-- logo
 <p align="center">
   <img src="#"   width="175px" alt="In Progress" />
-</p>
+</p> -->
 
 <p align="center">
  <a href="#dashgo">Sobre</a> •
