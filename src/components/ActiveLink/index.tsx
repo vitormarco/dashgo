@@ -12,7 +12,6 @@ export const ActiveLink = ({
   shouldMatchExactHref = false,
   ...rest
 }: ActiveLinkProps) => {
-  console.log(shouldMatchExactHref);
   const { asPath } = useRouter();
   let isActive = false;
 
