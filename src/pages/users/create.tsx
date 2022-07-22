@@ -13,6 +13,8 @@ import {
 import { Input } from '../../components/Form/Input';
 import { Header } from '../../components/Header';
 import { Sidebar } from '../../components/Sidebar';
+import Link from 'next/link';
+import { routes } from '../../routes';
 
 const UserCreate = () => {
   return (
@@ -47,7 +49,11 @@ const UserCreate = () => {
 
           <Flex mt={8} justify="flex-end">
             <HStack spacing={4}>
-              <Button colorScheme="whiteAlpha">Cancelar</Button>
+              <Link href={routes.users.list} passHref>
+                <Button as="a" colorScheme="whiteAlpha">
+                  Cancelar
+                </Button>
+              </Link>
               <Button colorScheme="pink">Salvar</Button>
             </HStack>
           </Flex>
