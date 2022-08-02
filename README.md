@@ -82,6 +82,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - ✔️ [Typescript](https://www.typescriptlang.org/)
 - ✔️ [Next](https://nextjs.org/docs/basic-features/typescript)
 - ✔️ [Chakra](https://chakra-ui.com/)
+- ✔️ [React Query](https://tanstack.com/query/v4/docs/overview)
 
 > Veja o arquivo [package.json](https://github.com/vitormarco/dashgo/blob/master/package.json)
 
