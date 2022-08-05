@@ -1,7 +1,9 @@
 import React from 'react';
+import { useRouter } from 'next/router';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { useMutation } from '@tanstack/react-query';
 
 import {
   Box,
@@ -18,6 +20,8 @@ import { Header } from '../../components/Header';
 import { Sidebar } from '../../components/Sidebar';
 import Link from 'next/link';
 import { routes } from '../../routes';
+import { api } from '../../services/api';
+import { queryClient } from '../../services/queryClient';
 
 type CreateUserFormData = {
   name: string;
@@ -39,13 +43,32 @@ const createUserFormSchema = yup.object().shape({
 });
 
 const CreateUser = () => {
+  const createUser = useMutation(
+    async (user: CreateUserFormData) => {
+      const response = await api.post('users', {
+        user: {
+          ...user,
+          created_at: new Date(),
+        },
+      });
+
+      return response.data.user;
+    },
+    {
+      onSuccess: () => {
+        queryClient.invalidateQueries(['users']);
+      },
+    },
+  );
+  const nextRoutes = useRouter();
+
   const { register, handleSubmit, formState } = useForm({
     resolver: yupResolver(createUserFormSchema),
   });
 
   const handleCreateUser: SubmitHandler<CreateUserFormData> = async values => {
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    console.log(values);
+    await createUser.mutateAsync(values);
+    nextRoutes.push('/users');
   };
 
   return (

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import NextLink from 'next/link';
 
 import {
@@ -40,7 +40,7 @@ const UserList = () => {
     lg: true,
   });
 
-  const handlePrefetchUser = async (userId: number) => {
+  const handlePrefetchUser = async (userId: string) => {
     await queryClient.prefetchQuery(
       ['user', userId],
       async () => {
