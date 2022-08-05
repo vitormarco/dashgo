@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
+import NextLink from 'next/link';
 
 import {
   Box,
@@ -17,6 +17,7 @@ import {
   Thead,
   Tr,
   useBreakpointValue,
+  Link as ChakraLink,
 } from '@chakra-ui/react';
 
 import { Header } from '../../components/Header';
@@ -27,6 +28,8 @@ import { routes } from '../../routes';
 
 import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 import { useUsers } from '../../services/hooks/useUsers';
+import { queryClient } from '../../services/queryClient';
+import { api } from '../../services/api';
 
 const UserList = () => {
   const [page, setPage] = useState(1);
@@ -37,7 +40,17 @@ const UserList = () => {
     lg: true,
   });
 
-  useEffect(() => {}, []);
+  const handlePrefetchUser = async (userId: number) => {
+    await queryClient.prefetchQuery(
+      ['user', userId],
+      async () => {
+        const response = await api.get(`users/${userId}`);
+      },
+      {
+        staleTime: 1000 * 60 * 10, // 10 minutes
+      },
+    );
+  };
 
   return (
     <Box>
@@ -55,7 +68,7 @@ const UserList = () => {
               )}
             </Heading>
 
-            <Link href={routes.users.create} passHref>
+            <NextLink href={routes.users.create} passHref>
               <Button
                 as="a"
                 size="sm"
@@ -65,7 +78,7 @@ const UserList = () => {
               >
                 Criar novo
               </Button>
-            </Link>
+            </NextLink>
           </Flex>
 
           {isLoading ? (
@@ -98,7 +111,12 @@ const UserList = () => {
                         </Td>
                         <Td>
                           <Box>
-                            <Text fontWeight="bold">{user.name}</Text>
+                            <ChakraLink
+                              color="purple.400"
+                              onMouseEnter={() => handlePrefetchUser(user.id)}
+                            >
+                              <Text fontWeight="bold">{user.name}</Text>
+                            </ChakraLink>
                             <Text fontSize="sm" color="gray.300">
                               {user.email}
                             </Text>
